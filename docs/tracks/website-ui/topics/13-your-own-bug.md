@@ -93,7 +93,8 @@ Share whatever you got to:
 - **Code:** a pull request against `develop` (a draft is fine).
 - **Anything else:** a shared Google Drive folder, or a link to a document.
 - **The [submission form](/tracks/website-ui/submitting-your-work)**, one per team.
-- **Optional:** a short video link, and two slides in the demo deck for the 4:15 demos.
+- **Two slides** in the demo deck for the 4:15 demos (required).
+- **Optional:** a short video link, on the form.
 
 Steps to reproduce in the pull request make it quick to review.
 
@@ -101,5 +102,5 @@ Nothing here is mandatory on the day. If you run short on time, share what you h
 
 ## Resources
 
-- [Website issues](https://github.com/civictechdc/ridescoredc-website/issues) · [Making website changes: troubleshooting](/tracks/website-ui/making-changes#troubleshooting-a-change)
+- [Website issues](https://github.com/civictechdc/ridescoredc-website/issues) · [Technical guides: troubleshooting](/tracks/website-ui/making-changes#troubleshooting-a-change)
 - [Repository layout](/tracks/website-ui/repository-layout)

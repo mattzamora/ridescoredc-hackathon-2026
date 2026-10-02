@@ -56,8 +56,10 @@
 .topic-list summary .t { font-weight: 600; color: var(--vp-c-brand-1); }
 .topic-list summary .t::before { content: '▸'; display: inline-block; width: 1.1em; transition: transform .15s; }
 .topic-list details[open] summary .t::before { transform: rotate(90deg); }
-.topic-body { padding: 2px 16px 12px 34px; font-size: 14px; background: var(--vp-c-bg-soft); }
-.topic-body p { margin: 8px 0; }
+/* Description under an open row: a readable column (about 70 characters), normal line
+   spacing, full contrast on white, tied to its row by a teal bar rather than a grey fill. */
+.topic-body { padding: 4px 16px 14px 30px; margin: 0 16px 0 18px; border-left: 3px solid var(--vp-c-brand-1); background: var(--vp-c-bg); }
+.topic-body p { margin: 8px 0; max-width: 70ch; font-size: 15px; line-height: 1.6; color: var(--vp-c-text-1); }
 @media (max-width: 640px) {
   .topic-head { display: none; }
   .topic-list summary { grid-template-columns: 1fr; gap: 2px; }
@@ -68,8 +70,8 @@
 .vp-doc li.task-list-item { list-style: none; margin-left: -1.25em; }
 .vp-doc .task-list-item-checkbox { margin: 0 .45em 0 0; vertical-align: -1px; accent-color: var(--vp-c-brand-1); }
 
-/* The "Open topic N" link sits on its own line, larger than the description. */
-.topic-body p:last-child { margin-top: 4px; font-size: 15px; font-weight: 600; }
+/* The "Open topic N" link sits on its own line, the same size as the description. */
+.topic-body p:last-child { margin-top: 4px; font-weight: 600; }
 
 /* Topic pages: the "At a glance" box. Large and scannable, so readers can tell quickly
    whether a topic suits them and what it takes. */
@@ -88,3 +90,12 @@
   .glance td { display: block; width: auto !important; white-space: normal !important; padding: 8px 14px; }
   .glance td:first-child { padding-bottom: 2px; border-bottom: none !important; }
 }
+
+/* Submitting page: the two must-do items by 4:00 */
+.must-do { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 20px 0 28px; }
+.must-do-card { position: relative; padding: 16px 18px 6px 60px; border: 2px solid var(--vp-c-brand-1); border-radius: 10px; background: var(--vp-c-brand-soft); }
+.must-do-card p { margin: 6px 0 10px; }
+.must-do-card p:first-of-type { font-size: 17px; }
+.must-do-num { position: absolute; left: 16px; top: 16px; width: 30px; height: 30px; border-radius: 50%; background: var(--vp-c-brand-1); color: var(--vp-c-white); font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.dark .must-do-num { color: #0b1f1d; }
+@media (max-width: 640px) { .must-do { grid-template-columns: 1fr; } }

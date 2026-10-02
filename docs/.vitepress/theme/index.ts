@@ -7,7 +7,7 @@ export default {
   Layout() {
     return h(DefaultTheme.Layout, null, {
       'home-features-before': () =>
-        h('h2', { class: 'choose-track', id: 'choose-your-track' }, 'Choose your track')
+        h('h2', { class: 'choose-track', id: 'choose-your-track' }, 'Start here')
     })
   }
 }

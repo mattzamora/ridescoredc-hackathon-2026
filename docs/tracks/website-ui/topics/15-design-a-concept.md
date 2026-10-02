@@ -105,11 +105,12 @@ Share whatever you got to:
 - **Code:** a pull request against `develop` (a draft is fine).
 - **Anything else:** a shared Google Drive folder, or a link to a document.
 - **The [submission form](/tracks/website-ui/submitting-your-work)**, one per team.
-- **Optional:** a short video link, and two slides in the demo deck for the 4:15 demos.
+- **Two slides** in the demo deck for the 4:15 demos (required).
+- **Optional:** a short video link, on the form.
 
 Nothing here is mandatory on the day. If you run short on time, share what you have and tell a mentor, because unfinished work with good notes still helps the next volunteer.
 
 ## Resources
 
 - [dev.ridescoredc.com](https://dev.ridescoredc.com) · [Survey on the dev site](https://dev.ridescoredc.com/survey/)
-- [Figma: getting started](https://help.figma.com/hc/en-us/categories/360002051613) · [Community Research track](/tracks/community-research)
+- [Figma: getting started](https://help.figma.com/hc/en-us/categories/360002051613)

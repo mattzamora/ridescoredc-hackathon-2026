@@ -26,6 +26,10 @@ Fork and clone the website repository, run `npm install`, and start the developm
 
 Do the Front-End guide first. Then start the database, API, tile server and nginx with `npm run stack`, and load DC's road data and the survey tables with `npm run setup`. The whole site runs at `http://localhost:8000`, offline if you like.
 
+### [Technical guides](/tracks/website-ui/making-changes)
+
+Once you're set up: step-by-step recipes for adding a page, changing the map or the survey, adding an API endpoint or database column, and loading different data. Also how to check your work, open a pull request against `develop`, and troubleshoot.
+
 ## You're ready when
 
 - **Front-End:** `http://localhost:5173` shows the map with colored streets, and `http://localhost:5173/survey/` shows the survey.

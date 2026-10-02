@@ -193,12 +193,6 @@ Have an idea none of the other topics cover? Write one sentence on who it's for 
 
 ### How to submit
 
-Details are in each topic and on [Submitting your work](/tracks/website-ui/submitting-your-work), but here's a basic checklist for 4:00:
-
-- [ ] **GitHub**, if relevant: a pull request against `develop`, or a public repository for AI-generated code
-- [ ] **Google Drive folder** of documents and links, if relevant (for example planning, design and spec topics), checked in a private browser window
-- [ ] **The [Website/UI submission form](https://forms.cloud.microsoft/r/ghpNKYPvgr)**, one per team
-- [ ] **Your video**, if you made one, linked on the form
-- [ ] **Two slides** (optional) in the [RideScore DC Demo Deck](https://docs.google.com/presentation/d/1ic9nFhiB6mftG0uKtgwuIJ0GgWwcM-_T/edit?usp=sharing&ouid=115249639562160932471&rtpof=true&sd=true), in the Website section
+Each topic says what to hand in. [Submitting your work](/tracks/website-ui/submitting-your-work) has the 4:00 checklist and the one form every team fills in.
 
 Not sure which topic to pick? Ask a mentor at the start; that's what we're here for.

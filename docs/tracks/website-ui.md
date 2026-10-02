@@ -7,18 +7,18 @@ The code lives in the [RideScore DC website repository](https://github.com/civic
 ## Start here
 
 1. **Pick a topic.** Browse the [15 topics](/tracks/website-ui/topics) and choose one per team.
-2. **Set up.** Install what your topic needs, ideally before Saturday. Some topics need nothing at all. See [Setting up](/tracks/website-ui/setting-up).
+2. **Set up.** Install what your topic needs, ideally before Saturday. Some topics need nothing at all. See [Setting up](/tracks/website-ui/setting-up), and the [Technical guides](/tracks/website-ui/making-changes) for step-by-step recipes once you're coding.
 3. **Build for two to three hours.** Mentors check in at 1:45. Ask questions any time.
-4. **Hand in by 4:00** with one form per team, then show your work in a two-minute demo at 4:15. See [Doing the work](/tracks/website-ui/doing-the-work).
+4. **Hand in by 4:00** with one form per team, then show your work in a two-minute demo at 4:15. See [Submitting your work](/tracks/website-ui/submitting-your-work).
 
 ## What's in this guide
 
 | Section | What it covers |
 |---|---|
-| [**Setting up**](/tracks/website-ui/setting-up) | Which setup your topic needs (none, Front-End or Full Stack), and step-by-step guides for each, including Windows. |
+| [**Setting up**](/tracks/website-ui/setting-up) | Which setup your topic needs (none, Front-End or Full Stack), step-by-step guides for each including Windows, and [Technical guides](/tracks/website-ui/making-changes): recipes for common changes and opening a pull request. |
 | [**Understanding the site**](/tracks/website-ui/understanding-the-site) | How the pieces fit together: the pages, the map tiles, the survey API and the database; where things live in the code; and what the data contains. |
 | [**Topics**](/tracks/website-ui/topics) | All 15 topics by level, each with its own page: the problem, tools, the challenge, what "done" looks like, and how to hand it in. |
-| [**Doing the work**](/tracks/website-ui/doing-the-work) | How to make a change and open a pull request, and how to submit your work with the form. |
+| [**Submitting your work**](/tracks/website-ui/submitting-your-work) | The one form every team fills in, sharing a Drive folder, your AI-use note, and the demo. |
 
 ## Downloads
 
@@ -31,7 +31,7 @@ There's no ranking: this is a collaborative hackathon. Each topic page has a **D
 
 ## Using AI
 
-AI tools are encouraged. Two or three hours is short, and a coding, design or writing assistant can help you get much further. You stay responsible for what you hand in, and every submission includes a short AI-use attestation. See [Submitting your work](/tracks/website-ui/submitting-your-work#_3-say-how-you-used-ai).
+AI tools are encouraged. Two or three hours is short, and a coding, design or writing assistant can help you get much further. You stay responsible for what you hand in, and every submission includes a short AI-use attestation. See [Submitting your work](/tracks/website-ui/submitting-your-work#_2-say-how-you-used-ai).
 
 ## Glossary
 

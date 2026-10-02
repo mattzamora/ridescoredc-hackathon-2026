@@ -126,7 +126,8 @@ Share whatever you got to:
 - **Code:** a public GitHub repository from your AI tool, or a pull request against `develop` if you built inside the site.
 - **Anything else:** a shared Google Drive folder, or a link to a document.
 - **The [submission form](/tracks/website-ui/submitting-your-work)**, one per team.
-- **Optional:** a short video link, and two slides in the demo deck for the 4:15 demos.
+- **Two slides** in the demo deck for the 4:15 demos (required).
+- **Optional:** a short video link, on the form.
 
 Two things that help others understand your design: a short note beside each screenshot on the intention behind it, and, if your AI tool generated code, a link to that repository.
 

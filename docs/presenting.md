@@ -12,9 +12,11 @@ Every team gets **2 minutes** to show what they did. That's short, so aim for on
 | **2. What you built or found** | Show it: a map, a chart, a screenshot, a finding. What does it tell us? |
 | **3. Next steps** | What would you do with more time? What should RideScore DC do with this? |
 
-Add your slides to the **shared demo deck** by 4:00: [RideScore DC Demo Deck](https://docs.google.com/presentation/d/1ic9nFhiB6mftG0uKtgwuIJ0GgWwcM-_T/edit?usp=sharing&ouid=115249639562160932471&rtpof=true&sd=true). Duplicate the two template slides at the front, move them into your track's section, and fill them in. We'll run every demo from this one deck.
+Add your slides to the **shared demo deck** by 4:00: [RideScore DC Demo Deck](https://docs.google.com/presentation/d/1ic9nFhiB6mftG0uKtgwuIJ0GgWwcM-_T/edit?usp=sharing&ouid=115249639562160932471&rtpof=true&sd=true). Duplicate the two template slides at the front, move them into the Website section, and fill them in. We'll run every demo from this one deck.
 
+<!-- Community Research track is hidden for now. To restore:
 **Community Research groups:** your two slides already cover these three points. See [Submitting Your Findings](/tracks/community-research/submitting-findings).
+-->
 
 ## Tips
 
