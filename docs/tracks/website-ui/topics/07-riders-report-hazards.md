@@ -70,7 +70,7 @@ A team member who only designs the reporting flow needs no install; see [Topic 1
 
 - **Test on your own stack.** Build and test against your local Docker copy, with made-up reports.
 - **How the API stores things today.** `api/main.py` has one write endpoint (a web address the page sends data to), `POST /api/submissions`. It saves a survey into tables in the `app` schema (a named group of tables in the database). A new kind of record needs a new endpoint, a Pydantic model (a Python class that checks incoming data has the right fields), and a new table. See [Add or change an API endpoint](/tracks/website-ui/making-changes#add-or-change-an-api-endpoint). Other terms are in the [glossary](/tracks/website-ui#glossary).
-- **New tables need a migration** (a numbered file that changes the database tables). Add one to `api/migrations/` and run `npm run migrate`. Add a new migration rather than editing an old one, because databases that already ran the old one won't pick up the change. See [Add a database table or column](/tracks/website-ui/making-changes#add-a-database-table-or-column-—-write-a-migration).
+- **New tables need a migration** (a numbered file that changes the database tables). Add one to `api/migrations/` and run `npm run migrate`. Add a new migration rather than editing an old one, because databases that already ran the old one won't pick up the change. See [Add a database table or column](/tracks/website-ui/making-changes#write-a-migration).
 - **Tie reports to `segment_id`.** Like survey answers, a report belongs to a block's lasting `segment_id`, because the `tile_id` changes every time the map data is rebuilt.
 - **Showing reports on the map is the hard part.** Martin (the server that turns the database into map tiles) publishes only what's in the `serving` schema. So displaying reports means a new view there, or loading them through the API.
 
@@ -118,7 +118,8 @@ Share whatever you got to:
 - **Code:** a pull request against `develop` (a draft is fine).
 - **Anything else:** a shared Google Drive folder, or a link to a document.
 - **The [submission form](/tracks/website-ui/submitting-your-work)**, one per team.
-- **Optional:** a short video link, and two slides in the demo deck for the 4:15 demos.
+- **Two slides** in the demo deck for the 4:15 demos (required).
+- **Optional:** a short video link, on the form.
 
 A plan is just as welcome as a proof of concept here.
 

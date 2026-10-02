@@ -1,11 +1,22 @@
-# How to make a change to the website
+# Technical guides
 
-Two developer workflows exist:
+*Step-by-step recipes for the common code changes. Find your change below and jump to it.*
 
-- **front-end only** — Vite serves the pages from your machine and fetches tiles and the API from a shared server. See the [Front-End Developer Guide](/tracks/website-ui/frontend-guide).
-- **full stack** — Everything runs on your machine: database, tile server, API, nginx. See the [Full Stack Developer Guide](/tracks/website-ui/full-stack-guide).
+| I want to… | Setup |
+|---|---|
+| [Add a new page](#add-a-new-page) | Front-End |
+| [Change how the map looks](#change-how-the-map-looks) | Front-End |
+| [Change the survey](#change-the-survey) | Front-End; Full Stack to store a new answer |
+| [Check my work and open a pull request](#check-your-work) | Front-End; Full Stack for the linter and tests |
+| [Add or change an API endpoint](#add-or-change-an-api-endpoint) | Full Stack |
+| [Add a database table or column](#write-a-migration) | Full Stack |
+| [Add a field to the crash popup](#add-a-field-to-the-crash-popup) | Full Stack + Models repository |
+| [Load different data, or data I built](#load-different-data) | Full Stack |
+| [Fix something that isn't working](#troubleshooting-a-change) | Either |
 
-**Related documents:** For what the pieces are and how a request is answered, see [docs/how-the-site-works.md](http://how-the-site-works.md). For where files live, see [docs/repository-layout.md](http://repository-layout.md). For what the data contains, see [docs/the-data.md](http://the-data.md).
+Not set up yet? See [Setting up](/tracks/website-ui/setting-up): the [Front-End guide](/tracks/website-ui/frontend-guide) runs the pages from your machine against the shared dev site; the [Full Stack guide](/tracks/website-ui/full-stack-guide) runs everything locally (database, tile server, API, nginx).
+
+**Related pages:** [How the site works](/tracks/website-ui/how-the-site-works) for what the pieces are and how a request is answered, [Repository layout](/tracks/website-ui/repository-layout) for where files live, and [The data](/tracks/website-ui/the-data) for what the data contains.
 
 Two repositories are involved. `ridescoredc-website`: the pages, the API, the survey tables. `ridescoredc-models` builds the road data and owns the SQL that decides what data a map tile may carry. The `ridescoredc-models` repository is only needed for more advanced changes that touch the data.
 
@@ -13,7 +24,7 @@ Two repositories are involved. `ridescoredc-website`: the pages, the API, the su
 
 ## Front-End only
 
-### Add a new page
+### Add a new page {#add-a-new-page}
 
 **Setup:** front-end only.
 
@@ -27,7 +38,7 @@ A website page is a folder containing an `index.html` file. The folder name ***i
 
 **Check it worked:** open `http://localhost:5173/about/` (front-end) or `http://localhost:8000/about/` (full stack), with no errors in the console (F12).
 
-### Change how the map looks
+### Change how the map looks {#change-how-the-map-looks}
 
 **Setup:** front-end only.
 
@@ -42,17 +53,19 @@ A website page is a folder containing an `index.html` file. The folder name ***i
 
 The score ramp is in `frontend/index.html`, in the `update_score` layer:
 
-'line-color': \['interpolate', \['linear'\], \['get', 'user_score'\], 0, '#CC3232', 50, '#E7B416', 100, '#2DC937'\],
+```js
+'line-color': ['interpolate', ['linear'], ['get', 'user_score'], 0, '#CC3232', 50, '#E7B416', 100, '#2DC937'],
+```
 
 The numbers are score values, the strings are the colors at those values. Add a stop by inserting another `value, '#color'` pair in ascending order.
 
-Anything in `frontend/src/shared/` is used by both pages. Check both pages after editing anything in the shared folder..
+Anything in `frontend/src/shared/` is used by both pages. Check both pages after editing anything in the shared folder.
 
 **Check it worked:** reload the page. Neither setup needs a restart for a page edit.
 
 ## Front-End or Full Stack
 
-### Change the survey
+### Change the survey {#change-the-survey}
 
 **Setup:** front-end only for wording and flow; full stack to store a new survey answer.
 
@@ -67,7 +80,7 @@ Note: **A response stores `segment_id` to link to a road segment and not `tile_i
 
 **For full stack setup only:**
 
-Storing a new answer also needs a field on `ContiguousSegment` or `SurveySubmission` in `api/main.py`, added to the matching `INSERT`, plus a migration for the database table column — see [Add a database table or column](#add-a-database-table-or-column-—-write-a-migration) below.
+Storing a new answer also needs a field on `ContiguousSegment` or `SurveySubmission` in `api/main.py`, added to the matching `INSERT`, plus a migration for the database table column — see [Add a database table or column](#write-a-migration) below.
 
 **Check it worked:** take the survey at `http://localhost:8000/survey/`, submit, and read the row back:
 
@@ -75,7 +88,7 @@ Storing a new answer also needs a field on `ContiguousSegment` or `SurveySubmiss
 docker compose exec db psql -U postgres -d db -c "select * from app.survey_submissions order by submitted_at desc limit 1;"
 ```
 
-### Check your work before opening a pull request
+### Check your work before opening a pull request {#check-your-work}
 
 **Setup:** full stack for the linter and tests; front-end only is enough for a pages-only change.
 
@@ -103,7 +116,7 @@ Open the pull request on GitHub against the `develop` branch. Describe what chan
 
 ## Full Stack
 
-### Add or change an API endpoint
+### Add or change an API endpoint {#add-or-change-an-api-endpoint}
 
 **Setup:** full stack.
 
@@ -122,7 +135,7 @@ The `fastapi` container reloads itself when you save `api/main.py`; no restart n
 
 **Check it worked:** call the endpoint, for example `curl -s http://localhost:8000/health`, and the tests pass.
 
-### Add a database table or column — write a migration
+### Add a database table or column — write a migration {#write-a-migration}
 
 **Setup:** full stack.
 
@@ -151,7 +164,7 @@ docker compose exec db psql -U postgres -d db -c "\d app.survey_submissions"
 
 ## Full Stack, touching the Models repository
 
-### Add a field to the crash popup
+### Add a field to the crash popup {#add-a-field-to-the-crash-popup}
 
 **Setup:** full stack. This change crosses both repositories and cannot be tested against the shared server.
 
@@ -179,7 +192,7 @@ npm run data -- --bundle /path/to/ridescoredc-models/dist/ridescoredc-bundle-pre
 
 **Check it worked:** open `http://localhost:8000`, click the Accidents button, zoom past zoom 15 so the dots appear, and click one. The new row shows a value, not `undefined`.
 
-### Load different data, or data you built yourself
+### Load different data, or data you built yourself {#load-different-data}
 
 **Setup:** full stack.
 
@@ -206,7 +219,7 @@ Then load both directories with the `--package` and `--bundle` flags of `npm run
 
 **Check it worked:** `load_data.py` prints the exact loader command it runs and then restarts Martin. Reload `http://localhost:8000`.
 
-## Troubleshooting a change
+## Troubleshooting a change {#troubleshooting-a-change}
 
 **A field in a popup reads `undefined`.** The name does not match what the pipeline produces. Use `major_injuries_bicyclist`, not the city's `MAJORINJURIES_BICYCLIST`. A MapLibre `['get', ...]` on a name that does not exist returns nothing and never raises.
 

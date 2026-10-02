@@ -14,27 +14,29 @@ hero:
     </ul>
   actions:
     - theme: brand
-      text: Choose your track
-      link: '#choose-your-track'
+      text: Get started
+      link: /tracks/website-ui
     - theme: alt
       text: Schedule
       link: '#schedule'
 features:
-  - icon: 📊
-    title: Models
-    details: Pick one of three challenges, from computing safety scores to building the data pipeline. Every experience level.
-    link: /tracks/models
-    linkText: Track details
+  # Models and Community Research are hidden for now. To restore, uncomment
+  # these cards and the matching rows in "Before you come" below.
+  # - icon: 📊
+  #   title: Models
+  #   details: Pick one of three challenges, from computing safety scores to building the data pipeline. Every experience level.
+  #   link: /tracks/models
+  #   linkText: Track details
   - icon: 🗺️
     title: Website / UI
     details: Improve the map and route survey riders use every day. Web developers and designers welcome.
     link: /tracks/website-ui
     linkText: Track details
-  - icon: 🧑‍🤝‍🧑
-    title: Community Research
-    details: Who is RideScore for, and can they trust it? No coding or bike-safety expertise needed.
-    link: /tracks/community-research
-    linkText: Track details
+  # - icon: 🧑‍🤝‍🧑
+  #   title: Community Research
+  #   details: Who is RideScore for, and can they trust it? No coding or bike-safety expertise needed.
+  #   link: /tracks/community-research
+  #   linkText: Track details
 ---
 
 <div class="landing">
@@ -47,7 +49,7 @@ A route survey lets people draw a ride they actually take and tell us how safe i
 
 ## How the day works
 
-This is a collaborative hackathon, more about moving RideScore DC forward than finishing a set task. Pick a track, form or join a small group, and choose a problem. A small improvement that works, a useful analysis, or a clear set of findings all count as success. Mentors from the project team check in with every group after lunch.
+This is a collaborative hackathon, more about moving RideScore DC forward than finishing a set task. Form or join a small group and choose a topic. A small improvement that works, a useful analysis, or a clear set of findings all count as success. Mentors from the project team check in with every group after lunch.
 
 ::: info
 Two projects share the day: RideScore DC and a separate FEC Data project. This site covers RideScore DC.
@@ -55,13 +57,16 @@ Two projects share the day: RideScore DC and a separate FEC Data project. This s
 
 ## Before you come
 
-**If you do one thing before Saturday, get set up for your track.** Downloading large files on shared event Wi-Fi is slow; setting up ahead of time ensures you can start building promptly at 11:00 AM.
+**If you do one thing before Saturday, get set up.** Downloading large files on shared event Wi-Fi is slow; setting up ahead of time ensures you can start building promptly at 11:00 AM.
 
 | Track | Before you come |
 |---|---|
-| [**Models**](/tracks/models) | Pick one challenge and get set up before Saturday:<br>• **[Challenge 1](/tracks/models/challenge-1):** Define and compute bike safety scores<br>• **[Challenge 2](/tracks/models/challenge-2):** Build a stable base map of bike infrastructure<br>• **[Challenge 3](/tracks/models/challenge-3):** Construct a production data pipeline<br>For your chosen challenge, follow the [Setting Up Your Computer](/tracks/models/setting-up-your-computer) guide, and then continue with the challenge-specific set up. |
 | [**Website / UI**](/tracks/website-ui) | Clone the website repo and follow the [Front-End](/tracks/website-ui/frontend-guide) or [Full Stack Developer Guide](/tracks/website-ui/full-stack-guide).<br>• **Windows users:** Start with the [Windows WSL](/tracks/website-ui/windows-wsl) guide.<br>• **Front-End (lighter):** Follow the [Front-End Developer Guide](/tracks/website-ui/frontend-guide).<br>• **Full Stack:** Requires Docker. Follow the [Full Stack Developer Guide](/tracks/website-ui/full-stack-guide). |
+
+<!-- Hidden tracks' rows, to restore:
+| [**Models**](/tracks/models) | Pick one challenge and get set up before Saturday:<br>• **[Challenge 1](/tracks/models/challenge-1):** Define and compute bike safety scores<br>• **[Challenge 2](/tracks/models/challenge-2):** Build a stable base map of bike infrastructure<br>• **[Challenge 3](/tracks/models/challenge-3):** Construct a production data pipeline<br>For your chosen challenge, follow the [Setting Up Your Computer](/tracks/models/setting-up-your-computer) guide, and then continue with the challenge-specific set up. |
 | [**Community Research**](/tracks/community-research) | No software installation required.<br>**What to bring:** Pen or pencil, mobile phone, laptop, and a clipboard if available. |
+-->
 
 ## Schedule
 
@@ -70,7 +75,7 @@ Two projects share the day: RideScore DC and a separate FEC Data project. This s
 | 9:30 | Doors open |
 | 10:00 | Check-in and coffee |
 | 10:30 | Kickoff |
-| 11:00 | Choose your track and start building |
+| 11:00 | Choose your topic and start building |
 | 1:00 | Lunch |
 | 1:45 | Mentor check-ins |
 | 4:00 | Submissions close |

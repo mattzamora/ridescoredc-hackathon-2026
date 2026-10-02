@@ -19,14 +19,17 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Problem statements', link: '/problem-statements' },
-      {
-        text: 'Tracks',
-        items: [
-          { text: 'Models', link: '/tracks/models' },
-          { text: 'Website / UI', link: '/tracks/website-ui' },
-          { text: 'Community Research', link: '/tracks/community-research' }
-        ]
-      },
+      // Models and Community Research are hidden for now; their pages still build.
+      // To restore, swap this link back for the 'Tracks' dropdown below.
+      { text: 'Website / UI', link: '/tracks/website-ui' },
+      // {
+      //   text: 'Tracks',
+      //   items: [
+      //     { text: 'Models', link: '/tracks/models' },
+      //     { text: 'Website / UI', link: '/tracks/website-ui' },
+      //     { text: 'Community Research', link: '/tracks/community-research' }
+      //   ]
+      // },
       { text: 'Presenting', link: '/presenting' },
       { text: 'Acknowledgements', link: '/acknowledgements' },
       { text: 'RideScore DC', link: 'https://ridescoredc.com' }
@@ -34,30 +37,31 @@ export default defineConfig({
     sidebar: {
       '/': [
         { text: 'Problem statements', link: '/problem-statements' },
-        {
-          text: 'Models',
-          link: '/tracks/models',
-          collapsed: true, // expands automatically on its own pages
-          items: [
-            {
-              text: 'Challenges',
-              items: [
-                { text: 'Challenge 1: Safety scores', link: '/tracks/models/challenge-1' },
-                { text: 'Challenge 2: Base map', link: '/tracks/models/challenge-2' },
-                { text: 'Challenge 3: Data pipeline', link: '/tracks/models/challenge-3' }
-              ]
-            },
-            {
-              text: 'Reference',
-              items: [
-                { text: 'Setting up your computer', link: '/tracks/models/setting-up-your-computer' },
-                { text: 'Snapshot data', link: '/tracks/models/snapshot-data' },
-                { text: 'Submitting your work', link: '/tracks/models/submitting-your-work' },
-                { text: 'bikescore-bna', link: '/tracks/models/bikescore-bna' }
-              ]
-            }
-          ]
-        },
+        // Models track: hidden for now, pages kept
+        // {
+        //   text: 'Models',
+        //   link: '/tracks/models',
+        //   collapsed: true, // expands automatically on its own pages
+        //   items: [
+        //     {
+        //       text: 'Challenges',
+        //       items: [
+        //         { text: 'Challenge 1: Safety scores', link: '/tracks/models/challenge-1' },
+        //         { text: 'Challenge 2: Base map', link: '/tracks/models/challenge-2' },
+        //         { text: 'Challenge 3: Data pipeline', link: '/tracks/models/challenge-3' }
+        //       ]
+        //     },
+        //     {
+        //       text: 'Reference',
+        //       items: [
+        //         { text: 'Setting up your computer', link: '/tracks/models/setting-up-your-computer' },
+        //         { text: 'Snapshot data', link: '/tracks/models/snapshot-data' },
+        //         { text: 'Submitting your work', link: '/tracks/models/submitting-your-work' },
+        //         { text: 'bikescore-bna', link: '/tracks/models/bikescore-bna' }
+        //       ]
+        //     }
+        //   ]
+        // },
         {
           text: 'Website / UI',
           link: '/tracks/website-ui',
@@ -69,7 +73,8 @@ export default defineConfig({
               items: [
                 { text: 'Windows (WSL)', link: '/tracks/website-ui/windows-wsl' },
                 { text: 'Front-End guide', link: '/tracks/website-ui/frontend-guide' },
-                { text: 'Full Stack guide', link: '/tracks/website-ui/full-stack-guide' }
+                { text: 'Full Stack guide', link: '/tracks/website-ui/full-stack-guide' },
+                { text: 'Technical guides', link: '/tracks/website-ui/making-changes' }
               ]
             },
             {
@@ -103,26 +108,20 @@ export default defineConfig({
                 { text: '15. Design a concept', link: '/tracks/website-ui/topics/15-design-a-concept' }
               ]
             },
-            {
-              text: 'Doing the work',
-              link: '/tracks/website-ui/doing-the-work',
-              items: [
-                { text: 'Making website changes', link: '/tracks/website-ui/making-changes' },
-                { text: 'Submitting your work', link: '/tracks/website-ui/submitting-your-work' }
-              ]
-            }
+            { text: 'Submitting your work', link: '/tracks/website-ui/submitting-your-work' }
           ]
         },
-        {
-          text: 'Community Research',
-          link: '/tracks/community-research',
-          collapsed: true,
-          items: [
-            { text: 'Schedule', link: '/tracks/community-research/schedule' },
-            { text: 'Activities', link: '/tracks/community-research/activities' },
-            { text: 'Submitting your findings', link: '/tracks/community-research/submitting-findings' }
-          ]
-        },
+        // Community Research track: hidden for now, pages kept
+        // {
+        //   text: 'Community Research',
+        //   link: '/tracks/community-research',
+        //   collapsed: true,
+        //   items: [
+        //     { text: 'Schedule', link: '/tracks/community-research/schedule' },
+        //     { text: 'Activities', link: '/tracks/community-research/activities' },
+        //     { text: 'Submitting your findings', link: '/tracks/community-research/submitting-findings' }
+        //   ]
+        // },
         { text: 'Presenting', link: '/presenting' },
         { text: 'Acknowledgements', link: '/acknowledgements' }
       ]

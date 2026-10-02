@@ -6,7 +6,7 @@
 
 This repository is the RideScore DC **website**: two web pages, a small API that records survey responses, configuration files, and convenience scripts. Note that the bike-safety data and the SQL that decides what the maps on the website show are built in a different repository — see [What is not here](#what-is-not-in-the-repository).
 
-**Related documents:** This document says **where** things live in the repository. Three companion documents say what they do: see [How the RideScore DC Site Works](/tracks/website-ui/how-the-site-works) for how the parts fit together, [The Data](/tracks/website-ui/the-data) for a description of the published dataset, and [How To](/tracks/website-ui/making-changes) for step-by-step recipes.
+**Related documents:** This document says **where** things live in the repository. Three companion documents say what they do: see [How the RideScore DC Site Works](/tracks/website-ui/how-the-site-works) for how the parts fit together, [The Data](/tracks/website-ui/the-data) for a description of the published dataset, and [Technical guides](/tracks/website-ui/making-changes) for step-by-step recipes.
 
 ## The file tree
 
@@ -68,7 +68,7 @@ package.json           the npm commands below
 
 `frontend/src/shared/` is loaded by both pages. A change there shows up on the scored map page **and** on the survey page. Check both before opening a pull request.
 
-For a step-by-step description of how to make changes, see the [How To](/tracks/website-ui/making-changes) document.
+For a step-by-step description of how to make changes, see the [Technical guides](/tracks/website-ui/making-changes).
 
 ## The npm commands
 

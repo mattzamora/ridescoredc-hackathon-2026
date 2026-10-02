@@ -15,7 +15,7 @@
 </div>
 
 
-*Related: [Topic 2: Explain the safety score](/tracks/website-ui/topics/02-explain-the-safety-score) · [Models track](/tracks/models) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
+*Related: [Topic 2: Explain the safety score](/tracks/website-ui/topics/02-explain-the-safety-score) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
 
 ## Problem statement
 
@@ -106,7 +106,8 @@ Share whatever you got to:
 - **Code:** a pull request against `develop` (a draft is fine).
 - **Anything else:** a shared Google Drive folder, or a link to a document.
 - **The [submission form](/tracks/website-ui/submitting-your-work)**, one per team.
-- **Optional:** a short video link, and two slides in the demo deck for the 4:15 demos.
+- **Two slides** in the demo deck for the 4:15 demos (required).
+- **Optional:** a short video link, on the form.
 
 Including the query or script behind your numbers makes them easy to check and reuse.
 

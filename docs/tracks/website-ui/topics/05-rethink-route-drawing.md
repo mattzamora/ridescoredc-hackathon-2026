@@ -130,7 +130,8 @@ Share whatever you got to:
 - **Code:** a pull request against `develop` (a draft is fine).
 - **Anything else:** a shared Google Drive folder, or a link to a document.
 - **The [submission form](/tracks/website-ui/submitting-your-work)**, one per team.
-- **Optional:** a short video link, and two slides in the demo deck for the 4:15 demos.
+- **Two slides** in the demo deck for the 4:15 demos (required).
+- **Optional:** a short video link, on the form.
 
 A plan is just as welcome as code here.
 
