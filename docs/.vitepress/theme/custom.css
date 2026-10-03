@@ -99,3 +99,12 @@
 .must-do-num { position: absolute; left: 16px; top: 16px; width: 30px; height: 30px; border-radius: 50%; background: var(--vp-c-brand-1); color: var(--vp-c-white); font-weight: 700; display: flex; align-items: center; justify-content: center; }
 .dark .must-do-num { color: #0b1f1d; }
 @media (max-width: 640px) { .must-do { grid-template-columns: 1fr; } }
+
+/* Infrastructure guide: owner swatches that match the diagram's boxes exactly */
+.swatch { display: inline-block; width: 30px; height: 18px; border-radius: 6px; border: 2px solid; vertical-align: -4px; margin-right: 8px; }
+.sw-web { border-color: #0f766e; background: #e6f6f4; }
+.sw-mod { border-color: #c2410c; background: #fff1e6; }
+.sw-oss { border-color: #6d28d9; background: #f1ecfd; }
+.sw-db  { border-color: #1d4ed8; background: #e8effd; }
+.sw-odc { border-color: #6b7280; background: #f3f4f6; }
+.vp-doc td:has(> .swatch) { white-space: nowrap; }

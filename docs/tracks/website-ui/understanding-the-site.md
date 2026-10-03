@@ -16,6 +16,10 @@ Two rules shape every change: the **survey never shows our scores**, so riders g
 
 ## The pages in this section
 
+### [Infrastructure guide](/tracks/website-ui/infrastructure)
+
+One diagram of the whole site: who owns each part, how road data reaches the map and survey answers reach the database, which Docker container runs what, and the addresses and ports on your laptop.
+
 ### [How the site works](/tracks/website-ui/how-the-site-works)
 
 A schematic of the four programs (nginx, Martin, the API, PostGIS), how a request is answered, the three database areas (`data`, `app`, `serving`), how the map and survey pages are built, and where the data comes from.

@@ -115,7 +115,7 @@ Use this list to tell when you have something worth showing, not as a test to pa
 Share whatever you got to:
 
 - **Code:** a pull request against `develop` (a draft is fine).
-- **Anything else:** a shared Google Drive folder, or a link to a document.
+- **Anything else:** your team's folder in the [Website/UI hand-in folder](https://drive.google.com/drive/folders/1n4fRuS5yiRNWO8Tfr6MA1l56i626spuh?usp=sharing). See [Your team's Drive folder](/tracks/website-ui/submitting-your-work#your-team-s-drive-folder).
 - **The [submission form](/tracks/website-ui/submitting-your-work)**, one per team.
 - **Two slides** in the demo deck for the 4:15 demos (required).
 - **Optional:** a short video link, on the form.

@@ -17,7 +17,7 @@ Use our template and add two slides to the Website section of the [RideScore DC 
 
 **One submission form per team**
 
-The [Website/UI Submission Form](https://forms.cloud.microsoft/r/ghpNKYPvgr) holds all your links: GitHub, Google Drive folder, demo video and any notes. The team representative fills it in for the whole team.
+The [Website/UI Submission Form](https://forms.cloud.microsoft/r/ghpNKYPvgr) holds all your links: GitHub, your team's Google Drive folder, demo video and any notes. Put every supporting file in **one folder**, created inside the [Website/UI hand-in folder](https://drive.google.com/drive/folders/1n4fRuS5yiRNWO8Tfr6MA1l56i626spuh?usp=sharing). The team representative fills it in for the whole team.
 </div>
 </div>
 
@@ -27,7 +27,7 @@ The [Website/UI Submission Form](https://forms.cloud.microsoft/r/ghpNKYPvgr) hol
 - [ ] **The [submission form](https://forms.cloud.microsoft/r/ghpNKYPvgr)**, one per team, starting your description with your topic number and ending with your AI-use note **(required)**
 - [ ] **Checked** against your topic's **Done when** list, on your local copy of the site
 - [ ] **GitHub**, if relevant: a pull request against `develop` from a branch of your fork, or a public repository for AI-generated code
-- [ ] **Google Drive folder** of documents and links, if relevant (for example planning, design and spec topics), checked in a private browser window
+- [ ] **One Google Drive folder** for your team, inside the [Website/UI hand-in folder](https://drive.google.com/drive/folders/1n4fRuS5yiRNWO8Tfr6MA1l56i626spuh?usp=sharing), holding every supporting file, checked in a private browser window
 - [ ] **Your video**, if you made one, linked on the form
 
 ## 1. Get your work ready
@@ -37,18 +37,21 @@ The form asks which outputs you're submitting; pick every one that applies.
 | Output on the form | What it is | Where it goes |
 |---|---|---|
 | **GitHub Pull Request** | Code: a fix, a feature, or a proof of concept | A pull request against the `develop` branch of [ridescoredc-website](https://github.com/civictechdc/ridescoredc-website). A draft pull request is fine. See [Technical guides](/tracks/website-ui/making-changes). |
-| **Plan, notes, or concept work** | Designs, plans, specs, notes, screenshots | A Google Drive folder your team creates and shares. **Required** for every plan or design submission. |
+| **Plan, notes, or concept work** | Designs, plans, specs, notes, screenshots | Your team's folder inside the [Website/UI hand-in folder](https://drive.google.com/drive/folders/1n4fRuS5yiRNWO8Tfr6MA1l56i626spuh?usp=sharing). **Required** for every plan or design submission. |
 | **Team video or demo** | A short recording of your work | A YouTube, Loom or similar video link. |
 
 Many teams have more than one: a pull request plus a video, or a plan plus a folder of sketches.
 
-### Making your Drive folder readable
+### Your team's Drive folder
 
-1. Create a folder in Google Drive named with your topic number and team name, for example `RideScore Website – Topic 5 – Team Snap`.
-2. Put everything in it: documents, exported Figma frames, photos of sketches, screenshots.
-3. **Add a README** (a short document or text file) that lists any links that live outside the folder, such as your Figma file, and says what each file is.
-4. Click **Share**, then under **General access** choose **Anyone with the link**, as **Viewer**. Do the same for any Figma file you link to.
-5. **Check it works:** copy the folder link, open a private or incognito browser window, and paste it. You should see the files and be able to download them without signing in. If you see "Request access", the link is not shared yet.
+Every team puts all its supporting materials in **one Google Drive folder**, created inside the shared **[Website/UI hand-in folder](https://drive.google.com/drive/folders/1n4fRuS5yiRNWO8Tfr6MA1l56i626spuh?usp=sharing)**. Reviewers find every team's work in one place.
+
+1. Open the [Website/UI hand-in folder](https://drive.google.com/drive/folders/1n4fRuS5yiRNWO8Tfr6MA1l56i626spuh?usp=sharing).
+2. Click **New → New folder** and name it with your topic number and team name, for example `Topic 5 – Team Snap`. One folder per team.
+3. Put everything in it: documents, exported Figma frames, photos of sketches, screenshots, and large files such as videos or `.pmtiles`.
+4. **Add a README** (a short document or text file) that says what each file is, and lists any links that live outside the folder, such as your Figma file or GitHub repository.
+5. **Check it works:** copy *your team's folder's* link (not the hand-in folder's), open a private or incognito browser window, and paste it. You should see the files without signing in. If you see "Request access", click **Share**, set **General access** to **Anyone with the link** as **Viewer**, and check again. Do the same for any Figma file you link to.
+6. Paste your team's folder link into the form.
 
 The form asks whether you did step 5. Reviewers can't see work behind a "Request access" page.
 

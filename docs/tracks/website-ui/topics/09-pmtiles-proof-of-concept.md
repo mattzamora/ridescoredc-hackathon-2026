@@ -112,12 +112,12 @@ Use this list to tell when you have something worth showing, not as a test to pa
 Share whatever you got to:
 
 - **Code:** a pull request against `develop` (a draft is fine).
-- **Anything else:** a shared Google Drive folder, or a link to a document.
+- **Anything else:** your team's folder in the [Website/UI hand-in folder](https://drive.google.com/drive/folders/1n4fRuS5yiRNWO8Tfr6MA1l56i626spuh?usp=sharing). See [Your team's Drive folder](/tracks/website-ui/submitting-your-work#your-team-s-drive-folder).
 - **The [submission form](/tracks/website-ui/submitting-your-work)**, one per team.
 - **Two slides** in the demo deck for the 4:15 demos (required).
 - **Optional:** a short video link, on the form.
 
-A plan is just as welcome as a proof of concept. Large `.pmtiles` files are better linked from a Drive folder than committed.
+A plan is just as welcome as a proof of concept. Large `.pmtiles` files belong in your team's Drive folder, not in a commit.
 
 Nothing here is mandatory on the day. If you run short on time, share what you have and tell a mentor, because unfinished work with good notes still helps the next volunteer.
 

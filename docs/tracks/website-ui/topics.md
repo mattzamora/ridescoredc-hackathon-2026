@@ -9,7 +9,7 @@ aside: false
 
 <span class="alert">Pick one topic per team at the start.</span> Every topic is sized for two to three hours of building. On Advanced topics you can hand in either a plan or a proof of concept. A small thing that works beats a big thing that doesn't.
 
-**Output** tells you what you hand in: a pull request on GitHub, a shared Google Drive folder, or your choice of a plan or a proof of concept. Every team also fills in one [submission form](/tracks/website-ui/submitting-your-work).
+**Output** tells you what you hand in: a pull request on GitHub, your team's folder in the [Website/UI hand-in folder](https://drive.google.com/drive/folders/1n4fRuS5yiRNWO8Tfr6MA1l56i626spuh?usp=sharing), or your choice of a plan or a proof of concept. Every team also fills in one [submission form](/tracks/website-ui/submitting-your-work).
 
 Topics are grouped by the level they start at; a few can grow into Advanced if you want them to. Click a row for a short description.
 
