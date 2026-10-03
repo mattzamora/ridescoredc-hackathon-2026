@@ -81,6 +81,7 @@ export default defineConfig({
               text: 'Understanding the site',
               link: '/tracks/website-ui/understanding-the-site',
               items: [
+                { text: 'Infrastructure guide', link: '/tracks/website-ui/infrastructure' },
                 { text: 'How the site works', link: '/tracks/website-ui/how-the-site-works' },
                 { text: 'Repository layout', link: '/tracks/website-ui/repository-layout' },
                 { text: 'The data', link: '/tracks/website-ui/the-data' }

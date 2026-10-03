@@ -8,6 +8,8 @@
 
 ## Schematic overview
 
+For the whole picture in one diagram, including who owns each part and the ports on your laptop, see the [Infrastructure guide](/tracks/website-ui/infrastructure).
+
 ![](/images/how-the-site-works-1.png)
 
 ## The four programs

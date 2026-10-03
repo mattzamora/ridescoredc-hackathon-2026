@@ -18,7 +18,7 @@ The code lives in the [RideScore DC website repository](https://github.com/civic
 | [**Setting up**](/tracks/website-ui/setting-up) | Which setup your topic needs (none, Front-End or Full Stack), step-by-step guides for each including Windows, and [Technical guides](/tracks/website-ui/making-changes): recipes for common changes and opening a pull request. |
 | [**Understanding the site**](/tracks/website-ui/understanding-the-site) | How the pieces fit together: the pages, the map tiles, the survey API and the database; where things live in the code; and what the data contains. |
 | [**Topics**](/tracks/website-ui/topics) | All 13 topics by level, each with its own page: the problem, tools, the challenge, what "done" looks like, and how to hand it in. |
-| [**Submitting your work**](/tracks/website-ui/submitting-your-work) | The one form every team fills in, sharing a Drive folder, your AI-use note, and the demo. |
+| [**Submitting your work**](/tracks/website-ui/submitting-your-work) | The one form every team fills in, your team's folder in the shared hand-in Drive folder, your AI-use note, and the demo. |
 
 ## Downloads
 
@@ -44,8 +44,9 @@ AI tools are encouraged. Two or three hours is short, and a coding, design or wr
 | **Dev site** | [dev.ridescoredc.com](https://dev.ridescoredc.com/), the shared development server. Front-End setups get their map data from it. |
 | **`develop`** | The branch where new work lands. Pull requests go against `develop`, not `main`. |
 | **Docker** | Runs the database, API, tile server and nginx on your own machine. Only the Full Stack setup needs it. |
+| **Docker container** | One program running in its own sealed box on your laptop. The Full Stack setup runs four: `nginx`, `martin`, `fastapi` and `db`. See the [Infrastructure guide](/tracks/website-ui/infrastructure). |
 | **Done when** | The checklist on each topic page that defines a finished result and guides feedback. |
-| **Drive folder** | A Google Drive folder your team shares for anything that isn't code. It must open in a private browser window. |
+| **Drive folder** | One Google Drive folder per team, created inside the [Website/UI hand-in folder](https://drive.google.com/drive/folders/1n4fRuS5yiRNWO8Tfr6MA1l56i626spuh?usp=sharing), for anything that isn't code. It must open in a private browser window. |
 | **`dvh`** | A CSS height unit that follows the visible screen on phones, including when the address bar shows or hides. `vh` doesn’t. |
 | **Endpoint** | One address on the API that does one job, for example `POST /api/submissions` saves a survey. |
 | **ES modules** | JavaScript files that share code with `import` and `export`, so each file only loads what it needs. |
@@ -71,5 +72,6 @@ AI tools are encouraged. Two or three hours is short, and a coding, design or wr
 | **Spec** | A written plan or proposal, for example on the [models wiki](https://github.com/civictechdc/ridescoredc-models/wiki) proposal template. |
 | **Survey** | The page at `/survey/` where a rider paints a route on the map and rates it block by block. It never shows our scores. |
 | **`tile_id`** | A number the map uses internally. It changes with every data build, so never store it. |
+| **Tile** | One small square of the map at one zoom level. The browser fetches only the tiles it is showing, from Martin. |
 | **tippecanoe** | A command-line tool that turns map data (GeoJSON) into map tiles. It runs on macOS and Linux, or WSL on Windows. |
 | **Vite** | The development server behind `npm run dev`. Serves the pages at `localhost:5173` and reloads on save. |

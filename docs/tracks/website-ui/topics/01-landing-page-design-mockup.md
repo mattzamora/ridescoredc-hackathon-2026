@@ -52,7 +52,7 @@ First impressions decide whether anyone uses RideScore DC at all. A clear, good-
 |---|---|---|
 | An AI design or app-building tool | Turn your ideas into a clickable mock-up fast | [Figma Make](https://www.figma.com/make/), [Lovable](https://lovable.dev), [Replit](https://replit.com), [v0](https://v0.app), [Claude](https://claude.ai), or another you like |
 | A GitHub account | Keep the code your AI tool generates | [github.com/signup](https://github.com/signup) |
-| Google Drive | Share your screenshots and notes | [drive.google.com](https://drive.google.com) |
+| Google Drive | Share your screenshots and notes | Your team's folder in the [Website/UI hand-in folder](https://drive.google.com/drive/folders/1n4fRuS5yiRNWO8Tfr6MA1l56i626spuh?usp=sharing) |
 | Optional: the Front-End setup | Build the page inside the real site instead | [Front-End Developer Guide](/tracks/website-ui/frontend-guide) |
 
 <span class="alert">Check this before Saturday.</span> If your AI tool makes code, check that it can **save (push) that code to GitHub on the plan you have**. Some tools only sync to GitHub on paid plans, or limit how much you can make for free. Try a tiny test project and check the code appears on GitHub, so there are no payment surprises on the day.
@@ -120,7 +120,7 @@ Use this list to tell when you have something worth showing, not as a test to pa
 Share whatever you got to:
 
 - **Code:** a public GitHub repository from your AI tool, or a pull request against `develop` if you built inside the site.
-- **Anything else:** a shared Google Drive folder, or a link to a document.
+- **Anything else:** your team's folder in the [Website/UI hand-in folder](https://drive.google.com/drive/folders/1n4fRuS5yiRNWO8Tfr6MA1l56i626spuh?usp=sharing). See [Your team's Drive folder](/tracks/website-ui/submitting-your-work#your-team-s-drive-folder).
 - **The [submission form](/tracks/website-ui/submitting-your-work)**, one per team.
 - **Two slides** in the demo deck for the 4:15 demos (required).
 - **Optional:** a short video link, on the form.
