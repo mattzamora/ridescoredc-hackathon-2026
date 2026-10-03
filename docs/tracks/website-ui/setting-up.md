@@ -6,7 +6,7 @@
 
 | Setup | For | You install | Time | Guide |
 |---|---|---|---|---|
-| **None** | Design concepts, plans and specs | Nothing. A browser, plus Figma or a document | — | the topic page |
+| **None** | Design mock-ups, plans and specs | Nothing. A browser, plus an AI design tool or a document | — | the topic page |
 | **Front-End** | Pages, map styling, the survey's look and flow, a landing page or tutorial | Git, Node.js 20+, a code editor, a GitHub account | about 10 minutes | [Front-End guide](/tracks/website-ui/frontend-guide) |
 | **Full Stack** | The API, the database, storing new survey answers, what data the map carries | Everything in Front-End, plus Docker Desktop and uv | about 30 minutes, plus downloads | [Full Stack guide](/tracks/website-ui/full-stack-guide) |
 

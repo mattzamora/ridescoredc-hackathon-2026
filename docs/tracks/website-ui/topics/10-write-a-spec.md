@@ -1,4 +1,4 @@
-# Topic 11: Write a spec
+# Topic 10: Write a spec
 
 <Badge type="danger" text="Advanced" /> <Badge type="info" text="Architecture" />
 
@@ -15,7 +15,7 @@
 </div>
 
 
-*Related: [Topic 10: PMTiles proof of concept](/tracks/website-ui/topics/10-pmtiles-proof-of-concept) · [Topic 9: Split the page code](/tracks/website-ui/topics/09-split-the-page-code) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
+*Related: [Topic 9: Experiment with PMTiles](/tracks/website-ui/topics/09-pmtiles-proof-of-concept) · [Topic 8: Split the page code into files](/tracks/website-ui/topics/08-split-the-page-code) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
 
 ## Problem statement
 
@@ -36,8 +36,7 @@ Today every new piece of data means a website change: someone has to add the lab
 ### How it connects
 
 - The models wiki's Proposals 0001, 0002, 0005 and 0006 describe the pipeline, dataset descriptions, database layout and deployment; your spec builds on them.
-- **Topic 3's** legend and popups, and **Topic 10's** static tiles, would both use what you specify.
-- A feature spec can also turn a **Topic 15** design into something buildable.
+- The map's legend and popups, and **Topic 9's** static tiles, would both use what you specify.
 
 ### Example ideas
 

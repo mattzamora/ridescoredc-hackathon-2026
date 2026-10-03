@@ -1,4 +1,4 @@
-# Topic 4: A survey that works on a phone
+# Topic 3: Make the survey work on a phone
 
 <Badge type="warning" text="Intermediate" /> <Badge type="info" text="Feature" />
 
@@ -15,7 +15,7 @@
 </div>
 
 
-*Related: [Topic 5: Rethink route drawing](/tracks/website-ui/topics/05-rethink-route-drawing) · [Topic 6: Fix the route-selector bugs](/tracks/website-ui/topics/06-fix-the-route-selector-bugs) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
+*Related: [Topic 4: Rethink route drawing](/tracks/website-ui/topics/04-rethink-route-drawing) · [Topic 5: Fix the route-selector bugs](/tracks/website-ui/topics/05-fix-the-route-selector-bugs) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
 
 ## Problem statement
 
@@ -28,7 +28,7 @@ Most riders will open the survey on a phone, often right after a ride. The surve
 
 | Map controls are small | Paint mode: map won't move, tips cover it | The sheet: stuck at half, small buttons |
 |---|---|---|
-| ![The survey on a phone, with small map control buttons](/images/topic-04/map-controls.jpg) | ![Paint mode on a phone, with an instruction box over the lower map](/images/topic-04/paint-mode.jpg) | ![The survey sheet open on a phone, covering the lower half](/images/topic-04/survey-sheet.jpg) |
+| ![The survey on a phone, with small map control buttons](/images/topic-03/map-controls.jpg) | ![Paint mode on a phone, with an instruction box over the lower map](/images/topic-03/paint-mode.jpg) | ![The survey sheet open on a phone, covering the lower half](/images/topic-03/survey-sheet.jpg) |
 
 *Screenshots from [dev.ridescoredc.com/survey/](https://dev.ridescoredc.com/survey/) on a simulated phone, October 2, 2026.*
 
@@ -46,9 +46,8 @@ The survey is how riders' real experience gets back into the project, and most o
 
 ### How it connects
 
-- **Topic 5** rethinks how a route is entered, and **Topic 6** fixes bugs in the same painting code. Chat with them so you don't edit the same lines.
+- **Topic 4** rethinks how a route is entered, and **Topic 5** fixes bugs in the same painting code. Chat with them so you don't edit the same lines.
 - The answers riders give are what the **Models track** can compare against its scores.
-- **Topic 15** teams may design a faster survey you can borrow from.
 
 ### Example ideas
 
@@ -96,7 +95,7 @@ Try this at home before Saturday, because event Wi-Fi often stops devices seeing
     - Paint mode turns off panning and pinch-zoom.
     - The sheet uses `50vh`, which on many phone browsers doesn't account for the address bar showing and hiding. Check this one on a real phone.
 - **Where the phone layout lives.** Everything is in `frontend/survey/index.html`: the `@media (max-width: 768px)` rules (search for `768px`), the bottom sheet (`#survey-sheet`, `.ss-handle`), and paint mode, which disables the map's gestures (search for `dragPan.disable`). See [Change the survey](/tracks/website-ui/making-changes#change-the-survey).
-- **Topics 5 and 6 edit the same paint code.** Keep layout changes in the CSS where you can, and talk to those teams before changing paint mode, so you don't undo each other's work.
+- **Topics 4 and 5 edit the same paint code.** Keep layout changes in the CSS where you can, and talk to those teams before changing paint mode, so you don't undo each other's work.
 - **Heads-up: scores stay off the survey.** It uses the `survey_segments` tiles, which carry no score. Please leave the scored layer out, because riders should give their own view before seeing ours.
 - **Please keep desktop working.** Above 768 px the sheet becomes a panel on the right.
 
@@ -148,7 +147,7 @@ Nothing here is mandatory on the day. If you run short on time, share what you h
 
 ## Resources
 
-- **Background pack:** [download topic-04-survey-on-a-phone.zip](/downloads/website-ui/topic-04-survey-on-a-phone.zip), design notes and analysis for this topic: the per-segment survey plan and a clickable bottom-sheet mock-up. Intended more for use with an AI assistant, for rapid comprehension of the issue: give it the Markdown files (Word versions are included too). Checked against today’s code; each section is marked as built, partly built, or an idea. Want everything? Grab [all notes across topics](/downloads/website-ui/all-notes-across-topics.zip) (just in case 😄).
+- **Background pack:** [download topic-03-survey-on-a-phone.zip](/downloads/website-ui/topic-03-survey-on-a-phone.zip), design notes and analysis for this topic: the per-segment survey plan and a clickable bottom-sheet mock-up. Intended more for use with an AI assistant, for rapid comprehension of the issue: give it the Markdown files (Word versions are included too). Checked against today’s code; each section is marked as built, partly built, or an idea. Want everything? Grab [all notes across topics](/downloads/website-ui/all-notes-across-topics.zip) (just in case 😄).
 - [Survey on the dev site](https://dev.ridescoredc.com/survey/) · [Website repository](https://github.com/civictechdc/ridescoredc-website)
 - [MapLibre handlers (dragPan, touchZoomRotate)](https://maplibre.org/maplibre-gl-js/docs/API/classes/Map/#dragpan) · [MDN: pointer events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events)
 - [MDN: viewport units (dvh)](https://developer.mozilla.org/en-US/docs/Web/CSS/length#dynamic_viewport_units) · [Touch target size (WCAG 2.5.5)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html)

@@ -1,4 +1,4 @@
-# Topic 8: DC by the numbers
+# Topic 7: Explore the numbers behind the map
 
 <Badge type="warning" text="Intermediate" /> <Badge type="info" text="Data" />
 
@@ -15,7 +15,7 @@
 </div>
 
 
-*Related: [Topic 2: Explain the safety score](/tracks/website-ui/topics/02-explain-the-safety-score) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
+*Related: [Submitting your work](/tracks/website-ui/submitting-your-work)*
 
 ## Problem statement
 

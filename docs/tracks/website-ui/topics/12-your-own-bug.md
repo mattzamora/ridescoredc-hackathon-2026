@@ -1,4 +1,4 @@
-# Topic 13: Your own bug
+# Topic 12: Fix your own bug
 
 <Badge type="tip" text="Any level" /> <Badge type="danger" text="Bug" />
 
@@ -15,7 +15,7 @@
 </div>
 
 
-*Related: [Topic 6: Fix the route-selector bugs](/tracks/website-ui/topics/06-fix-the-route-selector-bugs) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
+*Related: [Topic 5: Fix the route-selector bugs](/tracks/website-ui/topics/05-fix-the-route-selector-bugs) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
 
 ## Problem statement
 
@@ -33,7 +33,7 @@ Bugs cost trust faster than missing features. A popup showing `undefined`, a but
 ### How it connects
 
 - The **Community Research** track's confusion lists from the morning may point straight at bugs.
-- **Topic 6** covers the two known route-painting bugs, so pick something else.
+- **Topic 5** covers the two known route-painting bugs, so pick something else.
 - Anything you can't fix today can become a GitHub issue for the next volunteer.
 
 ### Example ideas
@@ -56,8 +56,8 @@ Bugs cost trust faster than missing features. A popup showing `undefined`, a but
 ## 2. Know before you start
 
 - **Where to look.** Open the [browser console](/tracks/website-ui#glossary) (press F12) on the map and the survey, and try every control. Check a phone-sized screen. The Community Research track's confusion lists are another source.
-- **Check it's new.** Look at the [open issues and pull requests](https://github.com/civictechdc/ridescoredc-website/issues) first, and skip the two route-selector bugs (Topic 6).
-- **Is it a bug or a design question?** "This is confusing" is often a design problem (Topic 15). A bug is something that doesn't do what it's clearly meant to.
+- **Check it's new.** Look at the [open issues and pull requests](https://github.com/civictechdc/ridescoredc-website/issues) first, and skip the two route-selector bugs (Topic 5).
+- **Is it a bug or a design question?** "This is confusing" is often a design question rather than a bug. A bug is something that doesn't do what it's clearly meant to.
 - **Keep it small.** One bug per pull request, because small changes are quicker to review.
 
 ## 3. The challenge

@@ -1,4 +1,4 @@
-# Topic 9: Split the page code into files
+# Topic 8: Split the page code into files
 
 <Badge type="warning" text="Intermediate" /> <Badge type="info" text="Architecture" />
 
@@ -15,7 +15,7 @@
 </div>
 
 
-*Related: [Repository layout](/tracks/website-ui/repository-layout) · [Topic 11: Write a spec](/tracks/website-ui/topics/11-write-a-spec) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
+*Related: [Repository layout](/tracks/website-ui/repository-layout) · [Topic 10: Write a spec](/tracks/website-ui/topics/10-write-a-spec) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
 
 ## Problem statement
 
@@ -34,8 +34,8 @@ Most code topics edit the map or survey page. Smaller files make every future co
 ### How it connects
 
 - The comments in `frontend/src/shared/config.js` already name this as planned work: convert the `onclick` handlers first, then move to modules.
-- **Topics 3–7 and 13** edit the map or survey page today, so timing and a merge plan matter more than the code. Topics 1 and 2 mostly add new pages.
-- **Topic 11's** spec would change how the pages read their settings; a modular page makes that easier.
+- **Topics 2–6 and 12** edit the map or survey page today, so timing and a merge plan matter more than the code. Topic 2 adds a tour to the map page, and Topic 1 may add a new page.
+- **Topic 10's** spec would change how the pages read their settings; a modular page makes that easier.
 
 ### Example ideas
 

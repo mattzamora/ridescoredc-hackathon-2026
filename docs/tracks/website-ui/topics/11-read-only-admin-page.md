@@ -1,4 +1,4 @@
-# Topic 12: Read-only admin page
+# Topic 11: Build a read-only admin page
 
 <Badge type="danger" text="Advanced" /> <Badge type="info" text="Feature" />
 
@@ -15,7 +15,7 @@
 </div>
 
 
-*Related: [Topic 7: Riders report hazards](/tracks/website-ui/topics/07-riders-report-hazards) · [Topic 8: DC by the numbers](/tracks/website-ui/topics/08-dc-by-the-numbers) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
+*Related: [Topic 6: Let riders report hazards](/tracks/website-ui/topics/06-riders-report-hazards) · [Topic 7: Explore the numbers behind the map](/tracks/website-ui/topics/07-dc-by-the-numbers) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
 
 ## Problem statement
 
@@ -33,8 +33,8 @@ The survey only helps if someone reads the answers. Right now the team can't eas
 ### How it connects
 
 - Reads the same `app` tables the survey writes to (see the Full Stack guide).
-- **Topic 7's** hazard reports would need the same kind of review screen.
-- Aggregated views could feed **Topic 8's** statistics without exposing individual responses.
+- **Topic 6's** hazard reports would need the same kind of review screen.
+- Aggregated views could feed **Topic 7's** statistics without exposing individual responses.
 
 ### Example ideas
 

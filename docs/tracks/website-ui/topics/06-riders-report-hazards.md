@@ -1,4 +1,4 @@
-# Topic 7: Riders report hazards
+# Topic 6: Let riders report hazards
 
 <Badge type="warning" text="Intermediate → Advanced" /> <Badge type="info" text="Feature" />
 
@@ -15,7 +15,7 @@
 </div>
 
 
-*Related: [Topic 15: Design a concept](/tracks/website-ui/topics/15-design-a-concept) · [Topic 12: Read-only admin page](/tracks/website-ui/topics/12-read-only-admin-page) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
+*Related: [Topic 11: Build a read-only admin page](/tracks/website-ui/topics/11-read-only-admin-page) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
 
 ## Problem statement
 
@@ -35,8 +35,7 @@ The score is built from published data, which is months or years old and never m
 
 - Reports would sit alongside the **survey** in the website's database (the `app` area), built the same way.
 - A report pinned to a block uses the same lasting `segment_id` as survey answers.
-- **Topic 12** (admin page) is where the team would review reports.
-- The **Reporting safety** design prompt in **Topic 15** explores the same idea without code.
+- **Topic 11** (admin page) is where the team would review reports.
 - Projects elsewhere, such as [BikeMaps.org](https://bikemaps.org/), show what riders report when asked.
 
 ### Example ideas
@@ -56,7 +55,7 @@ The score is built from published data, which is months or years old and never m
 
 <span class="alert">Do this ahead of time.</span> Follow the [Front-End Developer Guide](/tracks/website-ui/frontend-guide), then the [Full Stack Developer Guide](/tracks/website-ui/full-stack-guide). It downloads several Docker images, so do it at home rather than on event Wi-Fi. Windows users start with [Windows WSL](/tracks/website-ui/windows-wsl). You're ready when `http://localhost:8000/health` returns `{"status":"ok"}` and the map loads at `http://localhost:8000`.
 
-A team member who only designs the reporting flow needs no install; see [Topic 15](/tracks/website-ui/topics/15-design-a-concept).
+A team member who only designs the reporting flow needs no install: sketches or an AI mock-up are a fine part of a plan.
 
 ### If something goes wrong
 
@@ -127,6 +126,6 @@ Nothing here is mandatory on the day. If you run short on time, share what you h
 
 ## Resources
 
-- **Background pack:** [download topic-07-riders-report-hazards.zip](/downloads/website-ui/topic-07-riders-report-hazards.zip), design notes and analysis for this topic: notes on a JSON-driven survey engine from the NearMiss app, and how database migrations work. Intended more for use with an AI assistant, for rapid comprehension of the issue: give it the Markdown files (Word versions are included too). Checked against today’s code; each section is marked as built, partly built, or an idea. Want everything? Grab [all notes across topics](/downloads/website-ui/all-notes-across-topics.zip) (just in case 😄).
+- **Background pack:** [download topic-06-riders-report-hazards.zip](/downloads/website-ui/topic-06-riders-report-hazards.zip), design notes and analysis for this topic: notes on a JSON-driven survey engine from the NearMiss app, and how database migrations work. Intended more for use with an AI assistant, for rapid comprehension of the issue: give it the Markdown files (Word versions are included too). Checked against today’s code; each section is marked as built, partly built, or an idea. Want everything? Grab [all notes across topics](/downloads/website-ui/all-notes-across-topics.zip) (just in case 😄).
 - [Full Stack Developer Guide](/tracks/website-ui/full-stack-guide) · [How the site works](/tracks/website-ui/how-the-site-works) · [The data](/tracks/website-ui/the-data)
 - [FastAPI tutorial](https://fastapi.tiangolo.com/tutorial/) · [yoyo migrations](https://ollycope.com/software/yoyo/latest/)
