@@ -44,7 +44,7 @@ Many teams have more than one: a pull request plus a video, or a plan plus a fol
 
 ### Making your Drive folder readable
 
-1. Create a folder in Google Drive named with your topic number and team name, for example `RideScore Website – Topic 6 – Team Snap`.
+1. Create a folder in Google Drive named with your topic number and team name, for example `RideScore Website – Topic 5 – Team Snap`.
 2. Put everything in it: documents, exported Figma frames, photos of sketches, screenshots.
 3. **Add a README** (a short document or text file) that lists any links that live outside the folder, such as your Figma file, and says what each file is.
 4. Click **Share**, then under **General access** choose **Anyone with the link**, as **Viewer**. Do the same for any Figma file you link to.

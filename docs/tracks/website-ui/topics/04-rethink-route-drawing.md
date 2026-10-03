@@ -1,4 +1,4 @@
-# Topic 5: Rethink route drawing
+# Topic 4: Rethink route drawing
 
 <Badge type="warning" text="Intermediate → Advanced" /> <Badge type="info" text="Feature" />
 
@@ -15,7 +15,7 @@
 </div>
 
 
-*Related: [Topic 4: A survey that works on a phone](/tracks/website-ui/topics/04-survey-on-a-phone) · [Topic 6: Fix the route-selector bugs](/tracks/website-ui/topics/06-fix-the-route-selector-bugs) · [Topic 15: Design a concept](/tracks/website-ui/topics/15-design-a-concept) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
+*Related: [Topic 3: Make the survey work on a phone](/tracks/website-ui/topics/03-survey-on-a-phone) · [Topic 5: Fix the route-selector bugs](/tracks/website-ui/topics/05-fix-the-route-selector-bugs) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
 
 ## Problem statement
 
@@ -25,9 +25,9 @@ The survey asks riders to **paint** the route they rode by dragging a finger or 
 
 | Painting up 14th St, turning onto U St | After lift: the selection badge | Unpaint: erasing a block |
 |---|---|---|
-| ![A route being painted up 14th St NW and east along U St NW](/images/topic-05/paint-stroke.jpg) | ![The painted route with the badge offering Undo, Undo stroke, Clear and Rate route](/images/topic-05/route-painted.jpg) | ![Unpaint mode with a red erase stroke over a U St block](/images/topic-05/correction-tools.jpg) |
+| ![A route being painted up 14th St NW and east along U St NW](/images/topic-04/paint-stroke.jpg) | ![The painted route with the badge offering Undo, Undo stroke, Clear and Rate route](/images/topic-04/route-painted.jpg) | ![Unpaint mode with a red erase stroke over a U St block](/images/topic-04/correction-tools.jpg) |
 
-Painting also has two known bugs (wrong street at intersections, and blocks vanishing near turns). [Topic 6](/tracks/website-ui/topics/06-fix-the-route-selector-bugs) has steps to see them. On a phone, the painting tips cover part of the map you're trying to paint.
+Painting also has two known bugs (wrong street at intersections, and blocks vanishing near turns). [Topic 5](/tracks/website-ui/topics/05-fix-the-route-selector-bugs) has steps to see them. On a phone, the painting tips cover part of the map you're trying to paint.
 
 ### Why it matters
 
@@ -41,9 +41,8 @@ Every response starts with a route. If entering one is slow or gives a wrong rou
 
 ### How it connects
 
-- **Topic 6** fixes bugs in today's painting code. If you replace painting, talk to them first.
-- **Topic 4** makes the survey usable on phones, so a new method should work there too.
-- Routing ideas overlap with the **Route planning** design prompt in **Topic 15**.
+- **Topic 5** fixes bugs in today's painting code. If you replace painting, talk to them first.
+- **Topic 3** makes the survey usable on phones, so a new method should work there too.
 - The **Models track** uses the blocks each rider chose, in order, so whatever you build still needs to save them.
 
 ### Example ideas
@@ -71,13 +70,13 @@ Routing ideas may use an outside library or service (for example a routing engin
 | Symptom | Fix |
 |---|---|
 | The survey map shows grey streets but nothing highlights | You need to be in paint mode: press **Paint route** first. |
-| Painted streets disappear when you lift your finger | That's a known bug (Topic 6), not something you broke. |
+| Painted streets disappear when you lift your finger | That's a known bug (Topic 5), not something you broke. |
 
 ## 2. Know before you start
 
 - **The short version.** As you drag, the code finds the nearest street block, checks it fits the direction you're moving, and highlights it. When you're done, it groups the blocks by street so the questions can ask about each section.
 - **The details.** In `frontend/survey/index.html`, each pointer move adds a point, the stroke's direction is tracked, and `findBestCandidate` queries the street features within about 40 px of the pointer and picks the best match. Picks are queued, checked against the direction of the stroke, then committed and highlighted. Undo, Undo stroke, tap-to-remove and an erase brush handle corrections. After painting, the chosen blocks are grouped by street into sections for the questions.
-- **Topic 6 fixes bugs in the same code.** If you replace the painting tool, talk to any Topic 6 team, because otherwise you may undo each other's work.
+- **Topic 5 fixes bugs in the same code.** If you replace the painting tool, talk to any Topic 5 team, because otherwise you may undo each other's work.
 - **Save answers by `segment_id`.** The map works with an integer `tile_id`, but please save survey answers by the block's lasting `segment_id`, because `tile_id` changes every time the map data is rebuilt. The existing `segmentIdsFor()` function converts one to the other, so keep using it. See [tile_id and segment_id](/tracks/website-ui/how-the-site-works#tile-id-and-segment-id).
 - **Heads-up: scores stay off the survey.** Whatever you build, please keep our scores out of it, because riders should give their own view before seeing ours.
 - **Test submissions are fine.** Submissions from your local survey go to the shared dev server and will be discarded after the event.
@@ -139,6 +138,6 @@ Nothing here is mandatory on the day. If you run short on time, share what you h
 
 ## Resources
 
-- **Background pack:** [download topic-05-rethink-route-drawing.zip](/downloads/website-ui/topic-05-rethink-route-drawing.zip), design notes and analysis for this topic: the paint-a-route design notes, an editing roadmap, and an audit of the route_snapper library. Intended more for use with an AI assistant, for rapid comprehension of the issue: give it the Markdown files (Word versions are included too). Checked against today’s code; each section is marked as built, partly built, or an idea. Want everything? Grab [all notes across topics](/downloads/website-ui/all-notes-across-topics.zip) (just in case 😄).
+- **Background pack:** [download topic-04-rethink-route-drawing.zip](/downloads/website-ui/topic-04-rethink-route-drawing.zip), design notes and analysis for this topic: the paint-a-route design notes, an editing roadmap, and an audit of the route_snapper library. Intended more for use with an AI assistant, for rapid comprehension of the issue: give it the Markdown files (Word versions are included too). Checked against today’s code; each section is marked as built, partly built, or an idea. Want everything? Grab [all notes across topics](/downloads/website-ui/all-notes-across-topics.zip) (just in case 😄).
 - [Survey on the dev site](https://dev.ridescoredc.com/survey/) · [Change the survey](/tracks/website-ui/making-changes#change-the-survey)
 - [route_snapper](https://github.com/dabreegster/route_snapper) · [MapLibre GL JS docs](https://maplibre.org/maplibre-gl-js/docs/)

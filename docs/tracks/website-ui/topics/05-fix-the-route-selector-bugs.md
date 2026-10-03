@@ -1,4 +1,4 @@
-# Topic 6: Fix the route-selector bugs
+# Topic 5: Fix the route-selector bugs
 
 <Badge type="warning" text="Intermediate" /> <Badge type="danger" text="Bug" />
 
@@ -15,7 +15,7 @@
 </div>
 
 
-*Related: [Topic 5: Rethink route drawing](/tracks/website-ui/topics/05-rethink-route-drawing) · [Topic 13: Your own bug](/tracks/website-ui/topics/13-your-own-bug) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
+*Related: [Topic 4: Rethink route drawing](/tracks/website-ui/topics/04-rethink-route-drawing) · [Topic 12: Fix your own bug](/tracks/website-ui/topics/12-your-own-bug) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
 
 ## Problem statement
 
@@ -35,19 +35,19 @@ Tested on [dev.ridescoredc.com/survey/](https://dev.ridescoredc.com/survey/) on 
 
 | Mid-stroke: the cross block lights up | After lift: W St added, "3 roads selected" |
 |---|---|
-| ![Mid-stroke on 14th St NW, with the W St cross block already highlighted](/images/topic-06/bug-a-mid-stroke.jpg) | ![After lift, the W St block toward 13th St is selected](/images/topic-06/bug-a-wrong-street.jpg) |
+| ![Mid-stroke on 14th St NW, with the W St cross block already highlighted](/images/topic-05/bug-a-mid-stroke.jpg) | ![After lift, the W St block toward 13th St is selected](/images/topic-05/bug-a-wrong-street.jpg) |
 
 **Bug B, blocks vanish (main cause).** Paint **slowly** up 14th St NW from about T St, turn east along U St, and lift. The blocks near the corner disappear on lift, while the badge still says "2 roads selected". Fast strokes, with samples 10 px or more apart, keep every block.
 
 | Before lift: five blocks selected | After lift: the corner blocks are gone |
 |---|---|
-| ![An L-shaped stroke up 14th St and along U St with five blocks highlighted](/images/topic-06/vanish-turn-before-lift.jpg) | ![After lift, the blocks near the corner of 14th and U are no longer highlighted](/images/topic-06/vanish-turn-after-lift.jpg) |
+| ![An L-shaped stroke up 14th St and along U St with five blocks highlighted](/images/topic-05/vanish-turn-before-lift.jpg) | ![After lift, the blocks near the corner of 14th and U are no longer highlighted](/images/topic-05/vanish-turn-after-lift.jpg) |
 
 **Bug B, tile-edge case.** In the browser console run `map.showTileBoundaries = true`, zoom to 17 on Hospital Center Dr NW (a long block crossed by a tile line), paint about 150 px along the piece on the far side of the line, and lift: the whole block disappears.
 
 | While painting | After lift |
 |---|---|
-| ![Hospital Center Dr NW highlighted while painting, with a tile boundary line crossing it](/images/topic-06/bug-b-mid-stroke.jpg) | ![After lift, the block and the selection badge are gone](/images/topic-06/bug-b-after-lift.jpg) |
+| ![Hospital Center Dr NW highlighted while painting, with a tile boundary line crossing it](/images/topic-05/bug-b-mid-stroke.jpg) | ![After lift, the block and the selection badge are gone](/images/topic-05/bug-b-after-lift.jpg) |
 
 Also noticed while testing: the "N roads selected" count counts runs of street names, not blocks, so it doesn't change when blocks vanish. And after a stroke whose blocks are removed on lift, **Undo stroke** stays disabled.
 
@@ -63,8 +63,8 @@ These bugs make the survey record routes riders didn't ride. A response that rat
 
 ### How it connects
 
-- **Topic 5** may replace painting altogether, so a small fix is easiest to merge either way.
-- **Topic 4** works on the same page on phones.
+- **Topic 4** may replace painting altogether, so a small fix is easiest to merge either way.
+- **Topic 3** works on the same page on phones.
 - Correct routes are what make survey answers comparable with the **Models track's** scores.
 
 ### Example ideas
@@ -100,7 +100,7 @@ These bugs make the survey record routes riders didn't ride. A response that rat
 - **Where the code is.** All of it is in `frontend/survey/index.html`. The candidate scoring is in `findBestCandidate` (about lines 1260–1346, scoring at about 1319). The queue that accepts or drops picks is around 1376–1393. The cleanup on lift is `pruneSelectionsFarFromRawPolyline` (about 1546–1555), which uses `resampleUniform` (about 1481; step `RAW_PRUNE_SAMPLE_PX` = 10, limit `OUTLIER_PRUNE_PX` = 62) and `querySegmentFeatureById` (about 1508). Line numbers drift as people edit, so search for the function names.
 - **See the tile pieces.** In the browser console (press F12) on the survey page, run `map.showTileBoundaries = true`. The lines show where tiles cut long blocks.
 - **Fix one bug at a time,** in separate commits or pull requests, because small changes are easier to review.
-- **Topic 5 may rewrite this tool,** so a small, targeted fix is easiest to merge either way.
+- **Topic 4 may rewrite this tool,** so a small, targeted fix is easiest to merge either way.
 - **Heads-up:** save answers by `segment_id` (not `tile_id`), because `tile_id` changes every time the map data is rebuilt. And please keep scores off the survey, because riders should give their own view before seeing ours.
 
 ## 3. The challenge
@@ -155,6 +155,6 @@ Nothing here is mandatory on the day. If you run short on time, share what you h
 
 ## Resources
 
-- **Background pack:** [download topic-06-fix-the-route-selector-bugs.zip](/downloads/website-ui/topic-06-fix-the-route-selector-bugs.zip), design notes and analysis for this topic: a full root-cause analysis of both bugs, and earlier notes on the intersection problem. Intended more for use with an AI assistant, for rapid comprehension of the issue: give it the Markdown files (Word versions are included too). Checked against today’s code; each section is marked as built, partly built, or an idea. Want everything? Grab [all notes across topics](/downloads/website-ui/all-notes-across-topics.zip) (just in case 😄).
+- **Background pack:** [download topic-05-fix-the-route-selector-bugs.zip](/downloads/website-ui/topic-05-fix-the-route-selector-bugs.zip), design notes and analysis for this topic: a full root-cause analysis of both bugs, and earlier notes on the intersection problem. Intended more for use with an AI assistant, for rapid comprehension of the issue: give it the Markdown files (Word versions are included too). Checked against today’s code; each section is marked as built, partly built, or an idea. Want everything? Grab [all notes across topics](/downloads/website-ui/all-notes-across-topics.zip) (just in case 😄).
 - [Survey on the dev site](https://dev.ridescoredc.com/survey/) · [Change the survey](/tracks/website-ui/making-changes#change-the-survey)
 - [MapLibre `queryRenderedFeatures`](https://maplibre.org/maplibre-gl-js/docs/API/classes/Map/#queryrenderedfeatures) and [`querySourceFeatures`](https://maplibre.org/maplibre-gl-js/docs/API/classes/Map/#querysourcefeatures)

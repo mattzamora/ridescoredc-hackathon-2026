@@ -1,12 +1,12 @@
 # Website / UI
 
-This track improves the RideScore DC website: the **map** people use to explore how safe each street is to bike, and the **route survey** where riders tell us how a ride felt. You can fix rough edges, build something new, design a concept, or write a plan. Web developers, designers, mapping enthusiasts and planners are all welcome, and some topics need no code at all.
+This track improves the RideScore DC website: the **map** people use to explore how safe each street is to bike, and the **route survey** where riders tell us how a ride felt. You can fix rough edges, build something new, mock up a landing page, or write a plan. Web developers, designers, mapping enthusiasts and planners are all welcome.
 
 The code lives in the [RideScore DC website repository](https://github.com/civictechdc/ridescoredc-website) on the `develop` branch. The current site is at [dev.ridescoredc.com](https://dev.ridescoredc.com/).
 
 ## Start here
 
-1. **Pick a topic.** Browse the [15 topics](/tracks/website-ui/topics) and choose one per team.
+1. **Pick a topic.** Browse the [13 topics](/tracks/website-ui/topics) and choose one per team.
 2. **Set up.** Install what your topic needs, ideally before Saturday. Some topics need nothing at all. See [Setting up](/tracks/website-ui/setting-up), and the [Technical guides](/tracks/website-ui/making-changes) for step-by-step recipes once you're coding.
 3. **Build for two to three hours.** Mentors check in at 1:45. Ask questions any time.
 4. **Hand in by 4:00** with one form per team, then show your work in a two-minute demo at 4:15. See [Submitting your work](/tracks/website-ui/submitting-your-work).
@@ -17,13 +17,13 @@ The code lives in the [RideScore DC website repository](https://github.com/civic
 |---|---|
 | [**Setting up**](/tracks/website-ui/setting-up) | Which setup your topic needs (none, Front-End or Full Stack), step-by-step guides for each including Windows, and [Technical guides](/tracks/website-ui/making-changes): recipes for common changes and opening a pull request. |
 | [**Understanding the site**](/tracks/website-ui/understanding-the-site) | How the pieces fit together: the pages, the map tiles, the survey API and the database; where things live in the code; and what the data contains. |
-| [**Topics**](/tracks/website-ui/topics) | All 15 topics by level, each with its own page: the problem, tools, the challenge, what "done" looks like, and how to hand it in. |
+| [**Topics**](/tracks/website-ui/topics) | All 13 topics by level, each with its own page: the problem, tools, the challenge, what "done" looks like, and how to hand it in. |
 | [**Submitting your work**](/tracks/website-ui/submitting-your-work) | The one form every team fills in, sharing a Drive folder, your AI-use note, and the demo. |
 
 ## Downloads
 
 - **[all-materials-for-ai.zip](/downloads/website-ui/all-materials-for-ai.zip):** this whole guide plus the background notes, in Markdown. Upload it to your AI assistant and ask it to help you plan your topic.
-- **[All notes across topics](/downloads/website-ui/all-notes-across-topics.zip)** (just in case 😄): every background note for Topics 3–7, in Word and Markdown. Each of those topic pages also links its own zip, intended more for use with an AI assistant, for rapid comprehension of the issue.
+- **[All notes across topics](/downloads/website-ui/all-notes-across-topics.zip)** (just in case 😄): every background note for Topics 2–6, in Word and Markdown. Each of those topic pages also links its own zip, intended more for use with an AI assistant, for rapid comprehension of the issue.
 
 ## How judging works
 
@@ -41,7 +41,6 @@ AI tools are encouraged. Two or three hours is short, and a coding, design or wr
 | **Branch** | Your own line of changes in Git. Make one for each piece of work, starting from `develop`. |
 | **Browser console** | A panel in your browser that shows errors and lets you run small commands. Press F12 (or Cmd+Option+I on a Mac) and choose **Console**. |
 | **Custom panel** | The sliders in the map’s **Settings** panel that let you change how much each street feature counts toward the score. |
-| **Design concept** | Screens that show a new way to use the site, as Figma frames, AI mock-ups or photographed sketches. No code. |
 | **Dev site** | [dev.ridescoredc.com](https://dev.ridescoredc.com/), the shared development server. Front-End setups get their map data from it. |
 | **`develop`** | The branch where new work lands. Pull requests go against `develop`, not `main`. |
 | **Docker** | Runs the database, API, tile server and nginx on your own machine. Only the Full Stack setup needs it. |
@@ -53,6 +52,7 @@ AI tools are encouraged. Two or three hours is short, and a coding, design or wr
 | **Fork** | Your own copy of a repository on GitHub. You push your branch there and open a pull request from it. |
 | **Front-End setup** | Git, Node.js and an editor. Runs the pages on your laptop with `npm run dev`; map data comes from the dev site. Enough for most code topics. |
 | **Full Stack setup** | Front-End plus Docker and uv. Runs the whole site, database included, on your machine. Needed to store new data or change the API. |
+| **Guided tour** | A few short steps that point at a page's features one at a time, with Skip and Restart. Topic 2 builds one for the map. |
 | **LTS** | Level of Traffic Stress: a 1–4 rating of how stressful a street is to bike, from calm to hostile. The basis of the safety score. |
 | **MapLibre** | The JavaScript library that draws the map in the browser. |
 | **Martin** | The tile server. It turns database rows into map tiles. |

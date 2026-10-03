@@ -1,4 +1,4 @@
-# Topic 14: Your own feature
+# Topic 13: Build your own feature
 
 <Badge type="tip" text="Any level" /> <Badge type="info" text="Feature" />
 
@@ -15,7 +15,7 @@
 </div>
 
 
-*Related: [Topic 11: Write a spec](/tracks/website-ui/topics/11-write-a-spec) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
+*Related: [Topic 10: Write a spec](/tracks/website-ui/topics/10-write-a-spec) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
 
 ## Problem statement
 
@@ -33,7 +33,7 @@ The topic list reflects what the core team has seen so far. People new to the pr
 ### How it connects
 
 - Check the [models wiki](https://github.com/civictechdc/ridescoredc-models/wiki) and open issues first; someone may have started.
-- A bigger idea can be written up as a spec, like **Topic 11**.
+- A bigger idea can be written up as a spec, like **Topic 10**.
 - The **Community Research** track can test your idea with their personas.
 
 ### Example ideas
@@ -50,7 +50,7 @@ Pick the setup your idea needs:
 |---|---|---|
 | Pages, map styling, the survey's look and flow, a new page | Front-End | [Front-End Developer Guide](/tracks/website-ui/frontend-guide) |
 | What the survey stores, the API, the database, what data the map carries | Full Stack | [Full Stack Developer Guide](/tracks/website-ui/full-stack-guide) |
-| Nothing yet: you want to plan it first | None | [Topic 11: Write a spec](/tracks/website-ui/topics/11-write-a-spec) |
+| Nothing yet: you want to plan it first | None | [Topic 10: Write a spec](/tracks/website-ui/topics/10-write-a-spec) |
 
 Windows users start with [Windows WSL](/tracks/website-ui/windows-wsl).
 

@@ -1,4 +1,4 @@
-# Topic 10: PMTiles proof of concept
+# Topic 9: Experiment with PMTiles
 
 <Badge type="danger" text="Advanced" /> <Badge type="info" text="Architecture" />
 
@@ -15,7 +15,7 @@
 </div>
 
 
-*Related: [Topic 11: Write a spec](/tracks/website-ui/topics/11-write-a-spec) · [How the site works](/tracks/website-ui/how-the-site-works) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
+*Related: [Topic 10: Write a spec](/tracks/website-ui/topics/10-write-a-spec) · [How the site works](/tracks/website-ui/how-the-site-works) · [Submitting your work](/tracks/website-ui/submitting-your-work)*
 
 ## Problem statement
 
@@ -34,7 +34,7 @@ Static files would mean less to pay for and less to maintain for a small volunte
 ### How it connects
 
 - The tiles today come from the **serving** area of the database, built from the **Models track's** published data package.
-- **Topic 11's** Proposal 0004 is about where the adjustable weights live, which decides whether static tiles can support them.
+- **Topic 10's** Proposal 0004 is about where the adjustable weights live, which decides whether static tiles can support them.
 - The Full Stack guide shows how the current tile server is set up.
 
 ### Example ideas
